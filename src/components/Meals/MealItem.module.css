@@ -1,0 +1,11 @@
+.meal {
+  margin: 1rem 0rem;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(207, 207, 207);
+  display: flex;
+  justify-content: space-between;
+}
+
+.meal:last-child {
+  border: none;
+}

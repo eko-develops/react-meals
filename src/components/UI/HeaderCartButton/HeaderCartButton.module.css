@@ -1,0 +1,18 @@
+.cart-button {
+  background: linear-gradient(
+    35deg,
+    rgba(237, 66, 196, 1) 0%,
+    rgba(218, 145, 251, 1) 100%
+  );
+
+  padding: 0.5rem 1.75rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.cart-button > span {
+  font-size: 1rem;
+}
