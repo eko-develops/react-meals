@@ -1,9 +1,13 @@
 import style from "./CartIcon.module.css";
+import { CartContext } from "../../../../store/CartContext";
+import { useContext } from "react";
 
 const CartIcon = ({ width, fill, className }) => {
+  const { totalAmount } = useContext(CartContext);
+
   return (
     <div className={style["cart-icon-container"]}>
-      <div className={style["cart-icon-badge"]}>10</div>
+      <div className={style["cart-icon-badge"]}>{totalAmount}</div>
       <svg
         width={width}
         fill={fill}
