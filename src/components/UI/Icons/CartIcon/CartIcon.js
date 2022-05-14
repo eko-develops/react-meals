@@ -5,7 +5,7 @@ import { useContext } from "react";
 const CartIcon = ({ width, fill, className }) => {
   const { items } = useContext(CartContext);
 
-  const cartQuantity = items.reduce((acc, item) => acc + item.qty, 0);
+  const cartQuantity = items.reduce((acc, item) => acc + item.amount, 0);
 
   return (
     <div className={style["cart-icon-container"]}>
