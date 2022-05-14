@@ -9,7 +9,7 @@ const CartContext = React.createContext({
 
 const CartProvider = ({ children }) => {
   const [items, setItems] = useState([]);
-  const [totalAmount, setTotalAmount] = useState(items.length);
+  const [totalAmount, setTotalAmount] = useState(0);
 
   const addItem = (item) => {
     console.log("adding item");
